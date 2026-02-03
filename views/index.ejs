@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module Prerequisite Visualizer</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- Mermaid JS -->
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>University Module Visualizer</h1>
+        <p>Select your passed modules and target modules to see the dependency graph.</p>
+      </header>
+
+      <main>
+        <aside class="sidebar">
+          <div class="controls">
+            <h3>Course Selection</h3>
+            <div id="module-filters">
+              <!-- Filters can go here -->
+            </div>
+          </div>
+
+          <div class="module-list-section">
+            <h3>2. Passed / Failed Status</h3>
+            <p>Uncheck modules you failed or haven't taken.</p>
+            <div id="modules-list" class="module-list">
+              <!-- Loaded dynamically -->
+              <p>Loading modules...</p>
+            </div>
+          </div>
+        </aside>
+
+        <section class="visualizer">
+          <div class="top-bar">
+            <div class="target-selection">
+              <h3>3. Select Target Modules (e.g. 3rd Year)</h3>
+              <select id="target-modules" multiselect>
+                <!-- Dynamically loaded -->
+              </select>
+              <button id="visualize-btn">Visualize Graph</button>
+            </div>
+            <div class="legend">
+              <span class="badge passed">Passed</span>
+              <span class="badge failed">Failed</span>
+              <span class="badge pending">Target</span>
+              <span class="badge locked">Locked</span>
+            </div>
+          </div>
+
+          <div id="graph-container" class="mermaid">
+            <!-- Graph renders here -->
+          </div>
+
+          <div id="status-message"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="/js/app.js"></script>
+  </body>
+</html>

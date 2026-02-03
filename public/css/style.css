@@ -1,0 +1,122 @@
+:root {
+  --bg-color: #f4f4f9;
+  --sidebar-bg: #fff;
+  --text-color: #333;
+  --primary-color: #007bff;
+  --success-color: #28a745;
+  --danger-color: #dc3545;
+  --app-height: 100vh;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  height: var(--app-height);
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  background: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 350px;
+  background: var(--sidebar-bg);
+  border-right: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.visualizer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background: white;
+}
+
+.module-list {
+  margin-top: 1rem;
+}
+
+.module-group {
+  margin-bottom: 1rem;
+}
+
+.module-group h4 {
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.module-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.25rem;
+}
+
+.module-item input {
+  margin-right: 0.5rem;
+}
+
+.top-bar {
+  background: #eee;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#graph-container {
+  flex: 1;
+  overflow: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 1rem;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.badge {
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  color: white;
+  font-size: 0.8rem;
+  margin-left: 0.25rem;
+}
+.passed {
+  background-color: var(--success-color);
+}
+.failed {
+  background-color: var(--danger-color);
+}
+.pending {
+  background-color: var(--primary-color);
+}
+.locked {
+  background-color: #6c757d;
+}
