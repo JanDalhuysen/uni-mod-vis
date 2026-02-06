@@ -2,7 +2,7 @@ const fs = require("fs");
 const glob = require("glob");
 const path = require("path");
 
-function parseModules(pattern = "all_modules/all_*_modules.md") {
+function parseModules(pattern = "all_modules_new/all_*_modules.md") {
   const files = glob.sync(pattern);
   const allModules = {};
 

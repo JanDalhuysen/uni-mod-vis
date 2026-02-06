@@ -2,6 +2,8 @@
 
 ![University_Module_Visualizer](University_Module_Visualizer.png)
 
+![University_Module_Visualizer_v2](University_Module_Visualizer_v2.png)
+
 | [Stellenbosch_University_Yearbooks](https://www.su.ac.za/en/about/governance/registrar/yearbooks) |
 | ------------------------------------------------------------------------------------------------- |
 
